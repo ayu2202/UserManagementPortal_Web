@@ -1,0 +1,70 @@
+<div class="container-fluid bg">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+      <!--form start-->
+
+      <form class="form" [formGroup]="loginForm">
+        <h1>Log IN</h1>
+        <br />
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="email"
+            placeholder="Email Id"
+            formControlName="emailId"
+          />
+          <div
+            *ngIf="
+              loginForm.controls.emailId.invalid &&
+              loginForm.controls.emailId.touched
+            "
+            class="text-danger"
+            style="color: red"
+          >
+            Email is mandatory
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="password"
+            placeholder="Enter Password"
+            formControlName="password"
+          />
+          <div
+            *ngIf="
+              loginForm.controls.password.invalid &&
+              loginForm.controls.password.touched
+            "
+            class="text-danger"
+            style="color: red"
+          >
+            Password is mandatory
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="btnlogin btn btn-outline-success btn-sm btn-block"
+          (click)="login()"
+        >
+          Log In
+        </button>
+        <div *ngIf="successMessage" class="text-success">
+          {{ successMessage }}
+        </div>
+        <div *ngIf="errorMessage" class="text-danger">{{ errorMessage }}</div>
+        <br />
+
+        <p class="newac">
+          Don't Have Acoount?
+          <a class="alert-link" routerLink="register">Signup</a>
+        </p>
+      </form>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-xs-12"></div>
+  </div>
+</div>

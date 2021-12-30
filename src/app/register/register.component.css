@@ -1,0 +1,111 @@
+@font-face {
+  font-family: logintext;
+  src: url("../../assets/Fonts/acid.otf");
+}
+
+@font-face {
+  font-family: normalelements;
+  src: url("../../assets/Fonts/Quicksand-Light.otf");
+}
+
+#login-form {
+  margin-left: 35%;
+  height: auto;
+  width: 500px;
+  padding-left: 25px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+  position: absolute;
+  top: 20%;
+}
+
+.lblemail {
+  font-size: 35px;
+  font-family: "logintext";
+  margin-top: 20px;
+}
+
+.lblpassword {
+  font-size: 35px;
+  font-family: "logintext";
+  margin-top: 50px;
+}
+
+.break {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#email {
+  height: 30px;
+  width: 464px;
+  padding-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "logintext";
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+#pw {
+  height: 30px;
+  width: 464px;
+  padding-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "logintext";
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+#remember {
+  margin-top: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.btnlogin {
+  width: 97%;
+  height: 40px;
+  background-color: lightgrey;
+  color: black;
+  border-radius: 20px;
+}
+
+.btnlogin:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.newac {
+  font-size: 20px;
+  font-family: "normalelements";
+}
+
+a {
+  color: orangered;
+  font-family: "acid.otf";
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+/* new css for bootstrap form */
+.bg {
+  background-image: url("../../assets/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.form {
+  border: 1px solid black;
+  padding: 50px 60px;
+  margin-top: 25%;
+  background-color: white;
+  -webkit-box-shadow: 14px 8px 15px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 8px 15px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 14px 8px 15px -5px rgba(0, 0, 0, 0.75);
+}
